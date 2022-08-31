@@ -1,0 +1,23 @@
+#N canvas 421 59 949 662 12;
+#X obj 346 67 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#000000;
+#X obj 346 161 vline~;
+#X obj 328 203 *~;
+#X obj 328 268 output~;
+#X obj 273 161 osc~ 660;
+#X text 350 86 level time \, level time total time \, level time total
+time;
+#X text 355 128 a;
+#X text 405 128 d;
+#X text 441 128 s;
+#X text 493 128 r;
+#X text 414 160 sustain time = number - (attack time + decay time)
+;
+#X msg 346 106 1 500 \, 0.7 50 600 \, 0 1000 1600;
+#X text 415 177 sustain 50 in this example;
+#X connect 0 0 11 0;
+#X connect 1 0 2 1;
+#X connect 2 0 3 0;
+#X connect 2 0 3 1;
+#X connect 4 0 2 0;
+#X connect 11 0 1 0;
