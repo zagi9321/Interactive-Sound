@@ -1,0 +1,101 @@
+#N canvas 216 91 1172 733 12;
+#X obj 247 182 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#000000 0 1;
+#X obj 370 48 vsl 15 128 400 0 0 0 empty empty empty 0 -9 0 10 #fcfcfc
+#000000 #000000 0 1;
+#X floatatom 307 179 5 0 0 0 - - - 0;
+#X obj 247 225 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
+#000000 #000000;
+#X obj 247 202 metro 100;
+#X obj 285 243 + 1;
+#X obj 247 244 f 1;
+#X floatatom 247 267 5 0 0 0 - - - 0;
+#X obj 247 314 + 1;
+#X floatatom 247 338 5 0 0 0 - - - 0;
+#X text 325 243 Increment;
+#X text 326 266 Current value;
+#X text 327 289 Mod number of steps;
+#X text 326 314 1 indexed;
+#X text 328 338 Result;
+#X obj 180 380 sel 1;
+#X obj 247 290 % 4;
+#X obj 180 407 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
+#000000 #000000;
+#X obj 224 407 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
+#000000 #000000;
+#X obj 268 407 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
+#000000 #000000;
+#X obj 312 407 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
+#000000 #000000;
+#X obj 224 380 sel 2;
+#X obj 268 380 sel 3;
+#X obj 312 380 sel 4;
+#X text 363 379 Bang on specific ouptut;
+#X obj 637 182 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#000000 0 1;
+#X obj 745 27 vsl 15 128 0 400 0 0 empty empty empty 0 -9 0 10 #fcfcfc
+#000000 #000000 0 1;
+#X floatatom 682 158 5 0 0 0 - - - 0;
+#X obj 637 225 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
+#000000 #000000;
+#X obj 675 243 + 1;
+#X obj 637 244 f 1;
+#X floatatom 637 267 5 0 0 0 - - - 0;
+#X floatatom 637 338 5 0 0 0 - - - 0;
+#X text 715 243 Increment;
+#X text 716 266 Current value;
+#X text 717 289 Mod number of steps;
+#X text 716 314 1 indexed;
+#X text 718 338 Result;
+#X obj 637 290 % 4;
+#X text 730 362 Bang on specific ouptut;
+#X obj 637 361 sel 1 2 3 4;
+#X obj 637 385 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
+#000000 #000000;
+#X obj 655 385 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
+#000000 #000000;
+#X obj 674 385 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
+#000000 #000000;
+#X obj 692 385 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
+#000000 #000000;
+#X msg 682 183 tempo \$1 permin;
+#X obj 637 202 metro;
+#X text 804 183 ms to bpm;
+#X text 351 180 tempo in ms;
+#X obj 637 314 + 1;
+#X connect 0 0 4 0;
+#X connect 1 0 2 0;
+#X connect 2 0 4 1;
+#X connect 3 0 6 0;
+#X connect 4 0 3 0;
+#X connect 5 0 6 1;
+#X connect 6 0 5 0;
+#X connect 6 0 7 0;
+#X connect 7 0 16 0;
+#X connect 8 0 9 0;
+#X connect 9 0 15 0;
+#X connect 9 0 21 0;
+#X connect 9 0 22 0;
+#X connect 9 0 23 0;
+#X connect 15 0 17 0;
+#X connect 16 0 8 0;
+#X connect 21 0 18 0;
+#X connect 22 0 19 0;
+#X connect 23 0 20 0;
+#X connect 25 0 46 0;
+#X connect 26 0 27 0;
+#X connect 27 0 45 0;
+#X connect 28 0 30 0;
+#X connect 29 0 30 1;
+#X connect 30 0 29 0;
+#X connect 30 0 31 0;
+#X connect 31 0 38 0;
+#X connect 32 0 40 0;
+#X connect 38 0 49 0;
+#X connect 40 0 41 0;
+#X connect 40 1 42 0;
+#X connect 40 2 43 0;
+#X connect 40 3 44 0;
+#X connect 45 0 46 0;
+#X connect 46 0 28 0;
+#X connect 49 0 32 0;

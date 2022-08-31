@@ -1,0 +1,31 @@
+#N canvas 159 60 1172 733 12;
+#X obj 509 178 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#000000 0 1;
+#X obj 632 44 vsl 15 128 400 0 0 0 empty empty empty 0 -9 0 10 #fcfcfc
+#000000 #000000 0 1;
+#X floatatom 569 175 5 0 0 0 - - - 0;
+#X obj 509 221 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
+#000000 #000000;
+#X obj 509 198 metro 100;
+#X obj 547 239 + 1;
+#X obj 509 240 f 1;
+#X floatatom 509 263 5 0 0 0 - - - 0;
+#X obj 509 286 % 8;
+#X obj 509 310 + 1;
+#X floatatom 509 334 5 0 0 0 - - - 0;
+#X text 577 239 Increment;
+#X text 578 262 Current value;
+#X text 579 285 Mod number of steps;
+#X text 578 310 1 indexed;
+#X text 580 334 Result;
+#X connect 0 0 4 0;
+#X connect 1 0 2 0;
+#X connect 2 0 4 1;
+#X connect 3 0 6 0;
+#X connect 4 0 3 0;
+#X connect 5 0 6 1;
+#X connect 6 0 5 0;
+#X connect 6 0 7 0;
+#X connect 7 0 8 0;
+#X connect 8 0 9 0;
+#X connect 9 0 10 0;

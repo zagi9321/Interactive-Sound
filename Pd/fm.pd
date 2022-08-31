@@ -1,0 +1,38 @@
+#N canvas 234 86 914 668 12;
+#X obj 368 292 output~;
+#X obj 375 194 +~;
+#X floatatom 374 138 5 0 0 0 - - - 0;
+#X text 324 107 carrier;
+#X obj 453 109 osc~;
+#X floatatom 454 73 7 0 0 0 - - - 0;
+#X text 455 38 modulator;
+#X obj 454 154 *~;
+#X floatatom 502 127 5 0 0 0 - - - 0;
+#X text 508 99 mod depth;
+#X obj 418 19 hsl 128 15 0 1000 0 0 empty empty empty -2 -8 0 10 #fcfcfc
+#000000 #000000 0 1;
+#X obj 597 51 vsl 15 128 0 1000 0 0 empty empty empty 0 -9 0 10 #fcfcfc
+#000000 #000000 0 1;
+#X obj 371 242 phasor~ 440;
+#X text 456 208 with help from https://www.youtube.com/watch?v=DgeTHuDSgC0
+;
+#X obj 484 342 vu 15 120 empty empty -1 -8 0 10 #404040 #000000 1 0
+;
+#X obj 483 290 env~;
+#X obj 483 314 - 100;
+#X obj 483 266 r~ VU;
+#X obj 308 312 s~ VU;
+#X connect 1 0 12 0;
+#X connect 2 0 1 0;
+#X connect 4 0 7 0;
+#X connect 5 0 4 0;
+#X connect 7 0 1 1;
+#X connect 8 0 7 1;
+#X connect 10 0 5 0;
+#X connect 11 0 8 0;
+#X connect 12 0 0 0;
+#X connect 12 0 0 1;
+#X connect 12 0 18 0;
+#X connect 15 0 16 0;
+#X connect 16 0 14 0;
+#X connect 17 0 15 0;
