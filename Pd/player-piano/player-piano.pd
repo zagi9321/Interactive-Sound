@@ -129,7 +129,7 @@
 #X obj 64 652 tabread~ crash;
 #X msg 64 604 0 \, 70560 1600;
 #X text 207 696 crash;
-#X obj 718 41 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#X obj 718 -16 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000
 #000000 0 1;
 #X obj 758 111 + 1;
 #X floatatom 718 214 5 0 0 0 - - - 0;
@@ -240,8 +240,8 @@
 #X floatatom 718 138 5 0 0 0 - - - 0;
 #X msg 495 92 0;
 #X obj 718 111 f 1;
-#X text 447 54 reset;
-#X obj 495 56 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#X text 447 69 reset;
+#X obj 495 71 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000
 #000000;
 #X text 802 64 metronome at 300bpm (150 * 2);
 #X text 1090 237 32 steps for four bars;
@@ -271,6 +271,8 @@
 ;
 #X msg 65 912 read -resize ./audio/crash.wav crash;
 #X msg 423 911 read -resize ./audio/drum-loop.wav drum-loop;
+#X text 709 -35 Play!;
+#X text 17 -78 .;
 #X connect 0 0 8 0;
 #X connect 2 0 23 0;
 #X connect 4 0 0 0;
